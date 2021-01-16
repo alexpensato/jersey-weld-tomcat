@@ -1,0 +1,33 @@
+== Jersey Weld API
+
+This is a simple example project of an API written in Java, using Jersey and Weld.
+
+Jersey is the JAX-RS 2.x (https://jcp.org/en/jsr/detail?id=339[JSR-339] & https://jcp.org/en/jsr/detail?id=370[JSR-370])
+Reference Implementation.
+
+Weld is the http://www.cdi-spec.org/[CDI] Reference Implementation.
+
+This project has been configured for Tomcat WAR deployment.
+
+
+== Dependencies
+
+* https://eclipse-ee4j.github.io/jersey/[Eclipse Jersey] library
+* https://weld.cdi-spec.org/[Weld CDI] library
+* https://github.com/FasterXML/jackson[Jackson] JSON parser
+
+
+== Contributions
+
+…are always welcome.
+Don’t hesitate to submit a https://github.com/alexpensato/jersey-weld-tomcat/issues[bug report] or a
+https://github.com/alexpensato/jersey-weld-tomcat/pulls[pull requests].
+
+When filling a bug report or submitting a new feature, please try including supporting test cases.
+
+
+== License
+
+This project has been licensed under http://www.apache.org/licenses/LICENSE-2.0.html[Apache License 2.0].
+
+Use at your risk!
