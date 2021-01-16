@@ -10,14 +10,25 @@ Weld is the http://www.cdi-spec.org/[CDI] Reference Implementation.
 This project has been configured for Tomcat WAR deployment.
 
 
-== Dependencies
+=== Dependencies
 
 * https://eclipse-ee4j.github.io/jersey/[Eclipse Jersey] library
 * https://weld.cdi-spec.org/[Weld CDI] library
 * https://github.com/FasterXML/jackson[Jackson] JSON parser
 
 
-== Contributions
+=== Tomcat Configuration
+
+Weld implementation requires a `context.xml` file to be created in your Apache Tomcat configuration directory.
+You can manually create it, or allow Tomcat to automatically copy the file provided in this project,
+by modifying the `copyXML` attribute in your `conf/server.xml` file:
+
+[source]
+<Host name="localhost"  appBase="webapps"
+            unpackWARs="true" autoDeploy="true" copyXML="true">
+
+
+=== Contributions
 
 …are always welcome.
 Don’t hesitate to submit a https://github.com/alexpensato/jersey-weld-tomcat/issues[bug report] or a
@@ -26,7 +37,7 @@ https://github.com/alexpensato/jersey-weld-tomcat/pulls[pull requests].
 When filling a bug report or submitting a new feature, please try including supporting test cases.
 
 
-== License
+=== License
 
 This project has been licensed under http://www.apache.org/licenses/LICENSE-2.0.html[Apache License 2.0].
 
